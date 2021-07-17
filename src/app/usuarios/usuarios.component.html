@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-5 col-sm-12 ml-3" >
+            <nav class="nav flex-column">
+                <ul *ngFor="let usuario of listaUsuarios" class="list-group mt-4">
+                    <li class="list-group-item d-flex">
+                        <img src={{usuario.photo}} 
+                            class="rounded d-block" 
+                            style="height: 40px;width: 40px;" 
+                            (click)="Details_User(usuario.id)"/>
+                        <h4 class="ml-1">{{usuario.nombre}} {{usuario.apellido}}</h4>
+                    </li>
+                </ul>
+              </nav>
+        </div>
+        <div class="col-md-5 col-sm-12 mr-3 w-100 ">
+            <app-usuarios-details [usuario]="usuario"></app-usuarios-details>
+        </div>
+    </div>
+    
+</div>

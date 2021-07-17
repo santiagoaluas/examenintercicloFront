@@ -1,0 +1,53 @@
+
+
+
+<ngb-carousel *ngIf="images" >
+    <ng-template ngbSlide >
+      <div class="picsum-img-wrapper" >
+        <img [src]="images[0]" alt="Random first slide" style="height: 20rem;width: 220vh;">
+      </div>
+      <div class="carousel-caption" >
+        <h3>Examen Interciclo</h3>
+        <p>Universidad de Catolica de Cuenca</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper" >
+        <img [src]="images[1]" alt="Random second slide" style="height: 20rem;width: 220vh;">
+      </div>
+      <div class="carousel-caption">
+        <h3 class="text-dark">Santiago Alulema</h3>
+        <p class="text-dark">Estudiante de Ingenieria se Software</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper " >
+        <img [src]="images[2]"  alt="Random third slide" style="height: 20rem;width: 220vh;">
+      </div>
+      <div class="carousel-caption">
+        <h3>Materia</h3>
+        <p>Aplicaciones Moviles</p>
+      </div>
+    </ng-template>
+    
+  </ngb-carousel>
+<div class="container mt-2">
+    <h3 class="text-center">INFORMACION DE LA EMPRESA</h3>
+    <p class="mt-2 display-5">
+        SOFTWARE ENTERPRISE SERVICES es una empresa cuyo giro principal es la prestación de servicios y 
+        productos de tecnologías de la información, entre los que se encuentran fábrica de software y/o testing,
+         outsourcing y help desk. Asimismo, basados en nuestra experiencia, contamos con especializaciones 
+         en proyectos de transformación digital, aplicaciones móviles, integración de infraestructura, service office, 
+         migración tecnológica, business inteligence, facturación electrónica, capacitación TI y BPO.
+    </p>
+    <p class="mt-2 display-5">
+        Desde que iniciamos nuestras operaciones hemos experimentado un crecimiento constante y sostenido con una sólida 
+        posición financiera, adecuando nuestra estructura organizacional a la realidad cambiante de los avances tecnológicos,
+         a las necesidades de nuestros clientes y a la evolución de los mercados cada vez más exigentes y competitivos.
+    </p>
+    <p class="mt-2 display-5">
+        El conocimiento y dominio de nuestros modelos de negocio por nuestros colaboradores y asociados, 
+        alcanza una gran variedad de especializaciones. Contando con habilidades técnicas reconocidas en el ámbito del 
+        desarrollo de software y consultorías tecnológicas de amplio alcance en los procesos de negocios y mejora continua.
+    </p>
+</div>
