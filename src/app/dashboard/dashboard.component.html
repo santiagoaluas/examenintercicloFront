@@ -1,31 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Ucacue</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">UCACUE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="col-2 collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" routerLink="Home">Home <span class="sr-only">(current)</span></a>
+
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="Usuarios">Usuarios</a> 
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
         </li> -->
       </ul>
+      <span class="navbar-text">
+        <button class="btn btn-outline-success btn-block" (click)="salir()">Salir</button>
+      </span>
     </div>
-    <div class="col-9">
-        <div class="container-fluid justify-content-end">
-          <form class="d-flex">
-            <button class="btn btn-outline-success" (click)="salir()">Salir</button>
-          </form>
-        </div>
-      </div>
   </nav>
   <div class="flex">
     <router-outlet></router-outlet>

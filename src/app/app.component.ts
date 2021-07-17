@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
   public password: String = "";
   public mensaje: String = "";
   public login(){
-    if (!this.username.trim() && !this.password.trim()){
+    if (this.username.trim() && this.password.trim()){
       const respuesta = this.RestService.Get_Usuario(`https://protected-woodland-45407.herokuapp.com/Usuarios/Login/${this.username}/${this.password}`)
       .subscribe(respuesta => {
         var resp: any = respuesta;
