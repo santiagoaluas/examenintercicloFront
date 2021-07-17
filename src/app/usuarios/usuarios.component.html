@@ -9,6 +9,11 @@
                             style="height: 40px;width: 40px;" 
                             (click)="Details_User(usuario.id)"/>
                         <h4 class="ml-1">{{usuario.nombre}} {{usuario.apellido}}</h4>
+                        <a *ngIf="usuario.cumple; else loggedOut">
+                            <img width="25%" src="https://img.freepik.com/vector-gratis/concepto-letras-feliz-cumpleanos_23-2148514502.jpg?size=626&ext=jpg"/>
+                        </a>
+                        <ng-template #loggedOut>
+                         </ng-template>
                     </li>
                 </ul>
               </nav>

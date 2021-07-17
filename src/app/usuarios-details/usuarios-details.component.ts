@@ -10,6 +10,10 @@ export class UsuariosDetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
+  public comprobar_cumpleanios(){
+    
+  }
 }
