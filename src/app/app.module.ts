@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UsuariosDetailsComponent } from './usuarios-details/usuarios-details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalsComponent } from './modals/modals.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     DashboardComponent,
     HomeComponent,
     UsuariosComponent,
-    UsuariosDetailsComponent
+    UsuariosDetailsComponent,
+    ModalsComponent
   ],
   imports: [
     BrowserModule,
